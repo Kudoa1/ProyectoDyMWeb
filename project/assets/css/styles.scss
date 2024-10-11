@@ -1,0 +1,42 @@
+.backgroundColor{
+    background: rgb(241,219,188);
+    background: linear-gradient(166deg, rgba(241,219,188,1) 9%, rgba(194,188,209,1) 100%);
+}
+.loginBackgroundColor{
+    background-color: #f5f5f5;
+}
+
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    .social-btn {
+        background-color: white; /* Fondo blanco */
+        border: 1px solid #ccc; /* Bordes gris claros */
+        border-radius: 5px; /* Bordes redondeados */
+        width: 50px; /* Ajusta el tamaño del botón */
+        height: 50px; /* Ajusta el tamaño del botón */
+        margin: 0 5px; /* Espaciado entre botones */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+
+        img {
+            width: 24px; /* Tamaño del ícono */
+            height: 24px; /* Tamaño del ícono */
+        }
+
+        &:hover {
+            background-color: #f0f0f0; /* Color de fondo al pasar el mouse */
+            transform: scale(1.05); /* Efecto de aumento */
+        }
+    }
+}
+
+.text-center p {
+    margin-bottom: 15px; /* Espaciado debajo del texto "Or login with" */
+}

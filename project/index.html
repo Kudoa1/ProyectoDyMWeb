@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="backgroundColor">
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <form class="p-4 rounded shadow loginBackgroundColor">
+            
+            <div style="text-align: center;">
+                <img width="auto" height="auto" src="https://img.icons8.com/ios-filled/50/fridge.png" alt="fridge"/>
+                <h2 class="text-center mb-4" style="margin-top: 2%;">Login</h2>
+                <p>Enter your email and password to log in </p>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-3" style="margin-top: 3%;">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" placeholder="Contraseña" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="remember" style="margin-top: 20%;">
+                <label style="font-size: 1vw;" class="form-check-label" for="remember">Remember me</label>
+                <a href="" style="font-size: 1vw; margin-left: 10%;" >Forgot Password ?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Log In</button>
+
+            <div class="text-center mt-4">
+                <p>Or login with</p>
+                <div class="social-buttons">
+                    <button type="button" class="btn social-btn">
+                        <img src="https://img.icons8.com/fluency/48/google-logo.png" alt="Google" />
+                    </button>
+                    <button type="button" class="btn social-btn">
+                        <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook" />
+                    </button>
+                    <button type="button" class="btn social-btn">
+                        <img src="https://img.icons8.com/fluency-systems-filled/50/mac-os.png" alt="Apple" />
+                    </button>
+                    <button type="button" class="btn social-btn">
+                        <img src="https://img.icons8.com/fluency-systems-regular/50/smartphone--v1.png" alt="Phone" />
+                    </button>
+                </div>
+            </div>
+
+            <p class="text-center mt-3">Don't have an account? <a href="./formulario.html">Sign Up</a></p>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de manera tradicional
+            window.location.href = 'mapa.html'; // Redirige a la vista del mapa
+        });
+    
+        const socialButtons = document.querySelectorAll('.social-btn');
+        socialButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                window.location.href = 'mapa.html'; // Redirige a la vista del mapa al hacer clic en cualquiera de los botones
+            });
+        });
+    </script>
+</body>
+</html>
