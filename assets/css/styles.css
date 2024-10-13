@@ -2,6 +2,8 @@
 .backgroundColor {
   background: rgb(241, 219, 188);
   background: linear-gradient(166deg, rgb(241, 219, 188) 9%, rgb(194, 188, 209) 100%);
+  margin: auto;
+  border: 0%;
 }
 
 .loginBackgroundColor {
@@ -11,12 +13,6 @@
 .map-container {
   height: 400px;
   background: #f0f0f0;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -54,7 +50,7 @@ html, body {
 
 #buscador {
   margin-top: 3em;
-  width: 50em;
+  width: 100%;
   background-color: #f8f8f8;
   height: 3em;
   border-radius: 15px;
@@ -95,8 +91,30 @@ html, body {
   margin-bottom: 15px; /* Espaciado debajo del texto "Or login with" */
 }
 
-vista de puntos .puntos-disponibles {
+.puntos-disponibles {
   background-color: rgba(217, 217, 217, 0.4);
+}
+
+.containerMap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control-prev {
+  height: 74%;
+}
+
+.carousel-control-next {
+  height: 74%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
