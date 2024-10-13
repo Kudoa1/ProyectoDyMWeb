@@ -45,9 +45,17 @@ html, body {
     color: black;
   }
 
-
-  
-
+  #buscador{
+    margin-top: 3em;
+    width: 50em;
+    background-color: #f8f8f8;
+    height: 3em;
+    border-radius: 15px;
+    border: solid 1px;
+    border-color: #ccc;
+    padding-left:4em ;
+    opacity: 0.8;
+}
 
 .social-buttons {
     display: flex;
